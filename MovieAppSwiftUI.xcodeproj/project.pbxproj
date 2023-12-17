@@ -14,6 +14,13 @@
 		DCB00C8A2B28308A00A41E11 /* MovieAppSwiftUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB00C892B28308A00A41E11 /* MovieAppSwiftUITests.swift */; };
 		DCB00C942B28308A00A41E11 /* MovieAppSwiftUIUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB00C932B28308A00A41E11 /* MovieAppSwiftUIUITests.swift */; };
 		DCB00C962B28308A00A41E11 /* MovieAppSwiftUIUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB00C952B28308A00A41E11 /* MovieAppSwiftUIUITestsLaunchTests.swift */; };
+		DCFCF73D2B2EA528001E4640 /* MovieServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFCF73C2B2EA528001E4640 /* MovieServices.swift */; };
+		DCFCF73F2B2EA564001E4640 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFCF73E2B2EA564001E4640 /* DataRequest.swift */; };
+		DCFCF7412B2EAC77001E4640 /* ApiError.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFCF7402B2EAC77001E4640 /* ApiError.swift */; };
+		DCFCF7432B2EAFE7001E4640 /* MovieClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFCF7422B2EAFE7001E4640 /* MovieClient.swift */; };
+		DCFCF7452B2EB08D001E4640 /* MovieViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFCF7442B2EB08D001E4640 /* MovieViewModel.swift */; };
+		DCFCF7482B2EB13B001E4640 /* AppConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFCF7472B2EB13B001E4640 /* AppConstant.swift */; };
+		DCFCF74A2B2EB212001E4640 /* MovieCharacter.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCFCF7492B2EB212001E4640 /* MovieCharacter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +51,13 @@
 		DCB00C8F2B28308A00A41E11 /* MovieAppSwiftUIUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MovieAppSwiftUIUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCB00C932B28308A00A41E11 /* MovieAppSwiftUIUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAppSwiftUIUITests.swift; sourceTree = "<group>"; };
 		DCB00C952B28308A00A41E11 /* MovieAppSwiftUIUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieAppSwiftUIUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		DCFCF73C2B2EA528001E4640 /* MovieServices.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieServices.swift; sourceTree = "<group>"; };
+		DCFCF73E2B2EA564001E4640 /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
+		DCFCF7402B2EAC77001E4640 /* ApiError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiError.swift; sourceTree = "<group>"; };
+		DCFCF7422B2EAFE7001E4640 /* MovieClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieClient.swift; sourceTree = "<group>"; };
+		DCFCF7442B2EB08D001E4640 /* MovieViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModel.swift; sourceTree = "<group>"; };
+		DCFCF7472B2EB13B001E4640 /* AppConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppConstant.swift; sourceTree = "<group>"; };
+		DCFCF7492B2EB212001E4640 /* MovieCharacter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCharacter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +108,11 @@
 		DCB00C772B28308700A41E11 /* MovieAppSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				DCFCF7462B2EB129001E4640 /* Utils */,
+				DCB00CA22B2830AC00A41E11 /* Model */,
+				DCB00CA32B2830B500A41E11 /* View */,
+				DCB00CA42B2830BC00A41E11 /* ViewModel */,
+				DCB00CA52B2830DA00A41E11 /* Network */,
 				DCB00C782B28308700A41E11 /* MovieAppSwiftUIApp.swift */,
 				DCB00C7A2B28308700A41E11 /* ContentView.swift */,
 				DCB00C7C2B28308900A41E11 /* Assets.xcassets */,
@@ -125,6 +144,48 @@
 				DCB00C952B28308A00A41E11 /* MovieAppSwiftUIUITestsLaunchTests.swift */,
 			);
 			path = MovieAppSwiftUIUITests;
+			sourceTree = "<group>";
+		};
+		DCB00CA22B2830AC00A41E11 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DCFCF7492B2EB212001E4640 /* MovieCharacter.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DCB00CA32B2830B500A41E11 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DCB00CA42B2830BC00A41E11 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DCFCF7442B2EB08D001E4640 /* MovieViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DCB00CA52B2830DA00A41E11 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DCFCF73C2B2EA528001E4640 /* MovieServices.swift */,
+				DCFCF73E2B2EA564001E4640 /* DataRequest.swift */,
+				DCFCF7402B2EAC77001E4640 /* ApiError.swift */,
+				DCFCF7422B2EAFE7001E4640 /* MovieClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DCFCF7462B2EB129001E4640 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				DCFCF7472B2EB13B001E4640 /* AppConstant.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -258,7 +319,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				DCB00C7B2B28308700A41E11 /* ContentView.swift in Sources */,
+				DCFCF7432B2EAFE7001E4640 /* MovieClient.swift in Sources */,
+				DCFCF73D2B2EA528001E4640 /* MovieServices.swift in Sources */,
 				DCB00C792B28308700A41E11 /* MovieAppSwiftUIApp.swift in Sources */,
+				DCFCF7412B2EAC77001E4640 /* ApiError.swift in Sources */,
+				DCFCF7452B2EB08D001E4640 /* MovieViewModel.swift in Sources */,
+				DCFCF74A2B2EB212001E4640 /* MovieCharacter.swift in Sources */,
+				DCFCF73F2B2EA564001E4640 /* DataRequest.swift in Sources */,
+				DCFCF7482B2EB13B001E4640 /* AppConstant.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
