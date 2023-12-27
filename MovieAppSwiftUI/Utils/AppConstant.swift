@@ -6,5 +6,7 @@
 //
 
 import Foundation
+import UIKit
 
 let BASE_URL = "https://rickandmortyapi.com/api"
+let SCREEN_SIZE = UIScreen.main.bounds
